@@ -1,2 +1,5 @@
-# nf-core-taxprofiler-
-Automated script for running the pipeline nf-core/taxprofiler
+# nf-core-taxprofiler
+
+
+## Automation script for running the pipeline nf-core/taxprofiler
+
