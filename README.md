@@ -29,9 +29,7 @@ If you want to use the python scripts separately:
 ```
 Samplesheet_generator.py -i data_files/ -o samplesheet.csv -t ['I'/'N]
 ```
-
 <img width="450" alt="image" src="https://github.com/KhoujSunshine/nf-core-taxprofiler-/assets/100375394/c318b7ec-9753-41f7-9718-4cf22baa6903">
-
 
 ```
 databases_generator.py -t TOOL1 -d database.csv  
