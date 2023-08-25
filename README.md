@@ -21,14 +21,16 @@ The files resulting of those two scripts *samplesheet.csv* & *database.csv* will
 ## Usage
 
 ```
-./nf-core/taxprofiler.sh  datas_directory/ TOOL1[TOOL1,TOOL2..]
+./nf-core/taxprofiler.sh  data_directory/ TOOL1[TOOL1,TOOL2..]
 ```
 
 If you want to use the python scripts separately:
 
 ```
-Samplesheet_generator.py -i datas_file/ -o samplesheet.csv -t ['I'/'N]
+Samplesheet_generator.py -i data_files/ -o samplesheet.csv -t ['I'/'N]
 ```
+
+<img width="450" alt="image" src="https://github.com/KhoujSunshine/nf-core-taxprofiler-/assets/100375394/c318b7ec-9753-41f7-9718-4cf22baa6903">
 
 
 ```
