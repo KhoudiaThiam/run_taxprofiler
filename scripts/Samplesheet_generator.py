@@ -50,16 +50,6 @@ if __name__ == "__main__":
 
 	args=parser.parse_args()
 
-	"""if len(sys.argv) != 4:
-		sys.exit("You should provide exactly three arguments")	
-
-	#file containing the number of accession and the filename corresponding
-	filee=sys.argv[1]
-	#name of the output file, generated when we launch the script 
-	fileout=sys.argv[2]
-	#Type of technology used for the sequencing
-	type_f=sys.argv[3]
-	"""
 	#Short reads case
 	if args.type== 'I':
 		type_s=',ILLUMINA'
