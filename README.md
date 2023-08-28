@@ -32,8 +32,7 @@ Samplesheet_generator.py -i data_files/ -o samplesheet.csv -t ['I'/'N']
 The data_files should look like this :
 
 <p align="center">
-    <img width="252" alt="image" src="https://github.com/KhoujSunshine/nf-core-taxprofiler-/assets/100375394/951320fe-aece-4fb4-805f-bdb66330e7bb">
-</p>
+    <img width="252" alt="image" src="https://github.com/KhoujSunshine/nf-core-taxprofiler-/assets/100375394/cbcc200c-c5ae-4d1b-ba6f-ba89beabd9b0"></p>
 
 ```
 databases_generator.py -t TOOL1 -d database.csv  
