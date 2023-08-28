@@ -66,3 +66,5 @@ example :
 
 ## Contact
 
+If you found an issue or would like to submit an improvment to this project , you can contact me via [LinkedIn](https://www.linkedin.com/in/ndeye-khoudia-thiam/) or via email on khoudiathiampro@gmail.com
+
