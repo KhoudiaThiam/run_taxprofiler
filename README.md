@@ -13,7 +13,6 @@ This project is a automation script for creating the input needed to run the pip
 - The folder **scripts** is the folder containing the python scripts:
   - Samplesheet_generator.py
   - Database_generator.py
-- The folder **data** is the folder containing an example of dataset 
 - The file **run_taxprofiler.sh** allows the execution of the python files and the nf-core/taxprofiler pipeline
 
 ## Description
