@@ -8,17 +8,6 @@ Help()
    echo "Usage : bash nf-core/taxprofiler.sh " directory/ TOOL1[TOOL1,TOOL2..]
    echo   
 }
-while getopts ":h" option; do
-   case $option in
-      h) # display Help
-         Help
-         exit;;
-     \?) # incorrect option
-         echo "Error: Invalid option"
-         exit;;
-   esac
-done
-
 directory=$1
 tools=$2
 
@@ -37,13 +26,15 @@ tc=$(cat pip.txt)
 
 ./nextflow run nf-core/taxprofiler --input samplesheet.csv --databases database.csv --outdir ./ -profile docker $tc-resume
 
-Help()
-{
-  
-   echo "This project is a automation script for running the pipeline nf-core/taxprofiler. "
-   echo
-   echo "Usage : bash nf-core/taxprofiler.sh " datas_directory/ TOOL1[TOOL1,TOOL2..]
-   echo   
-}
+while getopts ":h" option; do
+   case $option in
+      h) # display Help
+         Help
+         exit;;
+     \?) # incorrect option
+         echo "Error: Invalid option"
+         exit;;
+   esac
+done
 
 
