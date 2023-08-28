@@ -26,6 +26,10 @@ tc=$(cat pip.txt)
 
 ./nextflow run nf-core/taxprofiler --input samplesheet.csv --databases database.csv --outdir ./ -profile docker $tc-resume
 #or nextflow run  nf-core/taxprofiler --input samplesheet.csv --databases database.csv --outdir ./ -profile docker $tc-resume
+
+rm -f pip.txt
+rm -f datas_file
+
 while getopts ":h" option; do
    case $option in
       h) # display Help
