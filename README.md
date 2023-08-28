@@ -11,8 +11,10 @@
 This project is a automation script for creating the input needed to run the pipeline nf-core/taxprofiler. 
 
 -The folder **scripts** is the folder containing the python scripts
+
 -The folder **datas** is the folder containing a test dataset
--The file **nf_core_taxprofiler.sh** is the main script 
+
+-The file **run_taxprofiler.sh** is the main script 
 
 ## Description
 
@@ -33,25 +35,34 @@ The resulting files of those two scripts : *samplesheet.csv* & *database.csv* wi
 ## Usage
 
 ```
-./run_nf-core_taxprofiler.sh  data_directory/ <TOOL1>,<TOOL2>
+./run_taxprofiler.sh  data_directory/ <TOOL1>,<TOOL2>
 ```
 Example :
 ```
-./run_nf-core_taxprofiler.sh  data/ Centrifuge,Motus,Kaiju
+./run_taxprofiler.sh  data/ Centrifuge,Motus,Kaiju
 ```
 
-If you want to use the python scripts separately:
+If you want to generate the samplesheet separately, you need a file containing all your samples :
 
-```
-./scripts/Samplesheet_generator.py -i data_files/ -o samplesheet.csv -t ['I'/'N']
-```
-The data_files should look like this :
+data.txt
 
 <p align="center">
-    <img width="252" alt="image" src="https://github.com/KhoujSunshine/nf-core-taxprofiler-/assets/100375394/cbcc200c-c5ae-4d1b-ba6f-ba89beabd9b0"></p>
+   <img width="658" alt="image" src="https://github.com/KhoujSunshine/run_nf-core-taxprofiler/assets/100375394/2847aaeb-320d-412f-8f95-d5d78bf29de5">
+</p>
 
 ```
-./scripts/databases_generator.py -t TOOL1 -d database.csv  
+./scripts/Samplesheet_generator.py -i data_file.txt -o samplesheet.csv -t ['I'/'N']
 ```
+example :
+```
+./scripts/Samplesheet_generator.py -i data.txt -o samplesheet.csv -t 'I'
+```
+ will return the samplesheet :
+ 
+ <p align="center">
+<img width="667" alt="image" src="https://github.com/KhoujSunshine/run_nf-core-taxprofiler/assets/100375394/926c0cd8-676a-4c24-8e3b-28867a39a2b0">
+ </p>
+ 
+
 
 
